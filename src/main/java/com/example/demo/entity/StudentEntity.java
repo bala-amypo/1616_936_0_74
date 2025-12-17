@@ -13,7 +13,6 @@ public class StudentEntity{
     private String email;
     private String password;
     private Date createdAt;
-
     public void setId(Integer id){
         this.id=id;
     }
@@ -23,7 +22,7 @@ public class StudentEntity{
     public void setEmail(String email){
         this.email=email;
     }
-    public void setPassword(String password){
+     public void setPassword(String password){
         this.password=password;
     }
     public void setCreatedAt(Date createdAt){
@@ -41,11 +40,11 @@ public class StudentEntity{
     public String getPassword(){
         return password;
     }
+   
     public Date getCreatedAt(){
         return createdAt;
     }
-    public StudentEntity(Integer id, String username, String email, String password, Date createdAt){
-        this.id=id;
+    public StudentEntity(Integer id,String username,String email,String password,Date createdAt){
         this.username=username;
         this.email=email;
         this.password=password;
@@ -54,4 +53,7 @@ public class StudentEntity{
     public StudentEntity(){
 
     }
-} 
+
+
+
+}
