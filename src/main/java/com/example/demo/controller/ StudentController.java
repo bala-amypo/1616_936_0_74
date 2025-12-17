@@ -2,9 +2,11 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
-
 import com.example.demo.service.StudentService;
+import com.example.demo.service.StudentEntity;
+
 import org.springframework.beans.factory.annotation.Autowired;
+
 
 @RestController
 public class StudentController{
