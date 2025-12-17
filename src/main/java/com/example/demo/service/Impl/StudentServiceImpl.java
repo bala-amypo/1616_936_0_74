@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class StudentServiceImpl implements StudentService{
    @Autowired StudentRepository student;//to access the methods in diff file
    //save(), findAll(),findById(),deleteById(),existsById();
-   
    public StudentEntity postdata(StudentEntity stu){
     return student.save(stu); //stu->userinput save->insert and update
    }
