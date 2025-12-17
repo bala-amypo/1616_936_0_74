@@ -10,6 +10,6 @@ public class StudentController{
     @Autowired StudentService ser;
     @PostMapping("/post")
     public StudentEntity sendData(@RequestBody StudentEntity stu){
-        return ser.postdata(stu);//from service like insert action takes place
+        return ser.postdata(stu);  //from service like insert action takes place
     }
 }
