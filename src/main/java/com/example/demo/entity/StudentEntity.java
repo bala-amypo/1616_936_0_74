@@ -1,6 +1,8 @@
 package com.example.demo.entity;
+
 @Entity
 public class StudentEntity{
+    @Id
     private Integer id;
     private String username;
     private String email;
@@ -45,7 +47,7 @@ public class StudentEntity{
         this.createdAt=createdAt;
     }
     public StudentEntity(){
-        
+
     }
 
 }
