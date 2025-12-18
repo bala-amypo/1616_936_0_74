@@ -14,7 +14,7 @@ public class ValidationServiceImpl implements ValidationService{
    //deleteById();
    //existsById();
    @Override
-    public ValidationEntity postdata(StudentEntity stu){
+    public ValidationEntity postdata(ValidationEntity stu){
         return valid.save(stu);
     }
     @Override
@@ -31,10 +31,10 @@ public class ValidationServiceImpl implements ValidationService{
         return valid.findById(id).orElse(null);    
     }
     @Override
-    public ValidationEntity putdata(Long id, StudentEntity std){
+    public ValidationEntity putdata(Long id, ValidationEntity std){
         if (student.existsById(id)){// checks for the existence of id(true)
             std.setId(id);// setting the id
-            return student.save(std);//replacing the id
+            return valid.save(std);//replacing the id
         }
         else{
             return null;
