@@ -32,6 +32,6 @@ public class ValidationController{
     @PutMapping("/put2/{id}")
     public ValidationEntity putData(@PathVariable Long id, @RequestBody ValidationEntity std){
         return ser.putdata(id,std);
-        
+ 
     }
 }
