@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.entity.StudentEntity;
-
+import java.util.List;
 @Service
 public class StudentServiceImpl implements StudentService{
    @Autowired StudentRepository student;//  acces the method in diff files
