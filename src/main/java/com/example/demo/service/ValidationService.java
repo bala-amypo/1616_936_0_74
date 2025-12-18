@@ -3,7 +3,7 @@ import com.example.demo.entity.ValidationEntity;
 import java.util.List;
 
 public interface ValidationService{
-    ValidationEntity postdata(StudentEntity stu);
+    ValidationEntity postdata(ValidationEntity stu);
     List<ValidationEntity> getdata();
     String deldata(Long id);
     ValidationEntity getbydata(Long id);
