@@ -13,24 +13,25 @@ import com.example.demo.entity.ValidationEntity;
 @RestController
 public class ValidationController{
     @Autowired ValidationService ser;  
-    @PostMapping("/post")
+    @PostMapping("/post2")
     public ValidationEntity sendData(@RequestBody ValidationEntity stu){
         return ser.postdata(stu);//to ser calling the service layer
     }
-    @GetMapping("/get")
+    @GetMapping("/get2")
     public List<ValidationEntity> getData(){
         return ser.getdata();
     }
-    @DeleteMapping("/del/{id}")
-    public String delData(@PathVariable Integer id){
+    @DeleteMapping("/del2/{id}")
+    public String delData(@PathVariable Long id){
         return ser.deldata(id);
     }
-    @GetMapping("/putgett/{id}")
-    public StudentEntity GetByData(@PathVariable Integer id){
+    @GetMapping("/putgett2/{id}")
+    public ValidationEntity GetByData(@PathVariable Long id){
         return ser.getbydata(id);
     }
-    @PutMapping("/put/{id}")
-    public StudentEntity putData(@PathVariable Integer id, @RequestBody StudentEntity std){
+    @PutMapping("/put2/{id}")
+    public ValidationEntity putData(@PathVariable Long id, @RequestBody ValidationEntity std){
         return ser.putdata(id,std);
+        
     }
 }
