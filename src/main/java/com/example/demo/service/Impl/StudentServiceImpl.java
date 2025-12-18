@@ -30,5 +30,4 @@ public class StudentServiceImpl implements StudentService{
     public StudentEntity putgetdata(Integer id){
         return student.findById(id);    
     }
-
 }
