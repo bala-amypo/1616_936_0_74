@@ -19,7 +19,7 @@ public class StudentController{
     public List<StudentEntity> getData(){
         return ser.getdata();
     }
-    @DeleteMapping("/del")
+    @DeleteMapping("/del/{id}")
     public String delData(@RequestBody Integer id){
         return ser.deldata(id);
     }
