@@ -32,8 +32,12 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public StudentEntity putdata(Integer id, StudentEntity std){
-        if student.existsById(id){
-            std.
+        if student.existsById(id){// checks for the existence of id(true)
+            std.setId(id);// setting the id
+            return student.save(std);//replacing the id
+        }
+        else{
+            return null;
         }
     }
 }
