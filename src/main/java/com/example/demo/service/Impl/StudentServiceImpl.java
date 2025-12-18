@@ -12,7 +12,7 @@ public class StudentServiceImpl implements StudentService{
    //findall();
    //findById();
    //deleteById();
-   //existById();
+   //existsById();
    @Override
     public StudentEntity postdata(StudentEntity stu){
         return student.save(stu);
@@ -31,5 +31,9 @@ public class StudentServiceImpl implements StudentService{
         return student.findById(id).orElse(null);    
     }
     @Override
-    public StudentE
+    public StudentEntity putdata(Integer id, StudentEntity std){
+        if student.existsById(id){
+            std.
+        }
+    }
 }
