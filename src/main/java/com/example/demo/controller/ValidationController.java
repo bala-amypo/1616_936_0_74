@@ -14,7 +14,7 @@ import com.example.demo.entity.ValidationEntity;
 public class ValidationController{
     @Autowired ValidationService ser;  
     @PostMapping("/post2")
-    public ValidationEntity sendData2(@RequestBody ValidationEntity stu){
+    public ValidationEntity sendData2(@Valid @RequestBody ValidationEntity stu){
         return ser.postdata2(stu);//to ser calling the service layer
     }
     // @GetMapping("/get2")
