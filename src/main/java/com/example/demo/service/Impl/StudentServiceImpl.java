@@ -27,10 +27,9 @@ public class StudentServiceImpl implements StudentService{
          return "Removed successfully";
     }
     @Override
-    public StudentEntity putdata(){
-        student.findById(id);
-        student.
-        return std;
+    public StudentEntity putgetdata(){
+        return student.findById(id);
+        
     }
 
 }
