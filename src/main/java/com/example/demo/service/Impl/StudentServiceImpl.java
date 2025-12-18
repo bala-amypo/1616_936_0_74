@@ -28,7 +28,8 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public StudentEntity putdata(){
-        student.
+        student.save(id,std);
+        return std;
     }
 
 }
