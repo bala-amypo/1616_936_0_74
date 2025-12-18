@@ -26,6 +26,6 @@ public class StudentController{
     }
     @GetMapping("/putgett/{id}")
     public StudentEntity putData(@PathVariable Integer id){
-        return ser.putgetdata(id);
+        return ser.getbydata(id);
     }
 }
