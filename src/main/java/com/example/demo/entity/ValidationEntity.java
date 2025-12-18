@@ -53,7 +53,7 @@ public class ValidationEntity{
         return password;
     }
    
-    public Date getAge(){
+    public int getAge(){
         return age;
     }
     public ValidationEntity(Long id,@NotNull @Size(min=2,max=8,message="Must range from 2 to 8 characters")
