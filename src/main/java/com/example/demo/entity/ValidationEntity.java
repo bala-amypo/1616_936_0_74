@@ -57,7 +57,7 @@ public class ValidationEntity{
     public Date getAge(){
         return age;
     }
-    public ValidationEntity(Long id;@NotNull @Size(min=2,max=8,message="Must range from 2 to 8 characters")
+    public ValidationEntity(Long id,@NotNull @Size(min=2,max=8,message="Must range from 2 to 8 characters")
     String username,@Email(message="Email is not valid") String email,
     @Size(min=2,max=8,message="Must range from 2 to 8 characters") @NotNull(message="password is mandatory")String password,
     @Min(18) @Positive @NotNull(message="Age is mandatory") int age){
