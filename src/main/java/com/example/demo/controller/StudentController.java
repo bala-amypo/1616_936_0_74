@@ -19,5 +19,7 @@ public class StudentController{
         return ser.getdata();
     }
     @DeleteMapping("/del")
-    public String 
+    public String delData(@RequestBody Integer id){
+        return ser.deldata(id);
+    }
 }
