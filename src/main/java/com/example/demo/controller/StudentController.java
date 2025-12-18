@@ -14,7 +14,7 @@ public class StudentController{
     }
     @GetMapping("/get")
     public StudentEntity getData(){
-        return ser.getdata(std);
+        return ser.getdata();
     }
 
 }
