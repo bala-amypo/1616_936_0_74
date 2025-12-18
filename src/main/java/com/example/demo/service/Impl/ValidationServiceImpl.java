@@ -2,36 +2,36 @@ package com.example.demo.service.Impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.ValidationService;
-import com.example.demo.repository.ValidatRepository;
-import com.example.demo.entity.StudentEntity;
+import com.example.demo.repository.ValidationRepository;
+import com.example.demo.entity.ValidationEntity;
 import java.util.List;
 @Service
-public class StudentServiceImpl implements StudentService{
-   @Autowired StudentRepository student;//  acces the method in diff files
+public class ValidationServiceImpl implements ValidationService{
+   @Autowired ValidationRepository valid;//  acces the method in diff files
    //save();
    //findall();
    //findById();
    //deleteById();
    //existsById();
    @Override
-    public StudentEntity postdata(StudentEntity stu){
-        return student.save(stu);
+    public ValidationEntity postdata(StudentEntity stu){
+        return valid.save(stu);
     }
     @Override
-    public List<StudentEntity> getdata(){
-        return student.findAll();
+    public List<ValidationEntity> getdata(){
+        return valid.findAll();
     }
     @Override
-    public String deldata(Integer id){
-         student.deleteById(id);
+    public String deldata(Long id){
+         valid.deleteById(id);
          return "Removed successfully";
     }
     @Override
-    public StudentEntity getbydata(Integer id){
-        return student.findById(id).orElse(null);    
+    public ValidationEntity getbydata(Long id){
+        return valid.findById(id).orElse(null);    
     }
     @Override
-    public StudentEntity putdata(Integer id, StudentEntity std){
+    public ValidationEntity putdata(Long id, StudentEntity std){
         if (student.existsById(id)){// checks for the existence of id(true)
             std.setId(id);// setting the id
             return student.save(std);//replacing the id
