@@ -26,10 +26,10 @@ public class ValidationServiceImpl implements ValidationService{
     //      valid.deleteById(id);
     //      return "Removed successfully";
     // }
-    // @Override
-    // public ValidationEntity getbydata(Long id){
-    //     return valid.findById(id).orElse(null);    
-    // }
+    @Override
+    public ValidationEntity getbydata(Long id){
+        return valid.findById(id).orElse(null);    
+    }
     // @Override
     // public ValidationEntity putdata(Long id, ValidationEntity std){
     //     if (student.existsById(id)){// checks for the existence of id(true)
