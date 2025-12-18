@@ -6,4 +6,5 @@ public interface StudentService{
     StudentEntity postdata(StudentEntity stu);
     List<StudentEntity> getdata();
     String deldata(Integer id);
+    StudentEntity putdata(Integer id,)
 }
