@@ -18,4 +18,6 @@ public class StudentController{
     public List<StudentEntity> getData(){
         return ser.getdata();
     }
+    @DeleteMapping("/del")
+    public String 
 }
