@@ -63,7 +63,7 @@ public class ValidationEntity{
         this.username=username;
         this.email=email;
         this.password=password;
-        this.createdAt=createdAt;
+        this.age=age;
     }
     public ValidationEntity(){
 
