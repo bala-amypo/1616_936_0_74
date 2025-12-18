@@ -21,5 +21,7 @@ public class StudentServiceImpl implements StudentService{
     public List<StudentEntity> getdata(){
         return student.findAll();
     }
+    @Override
+    public StudentEntity deldata()
 
 }
