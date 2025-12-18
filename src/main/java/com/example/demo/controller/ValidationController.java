@@ -18,10 +18,10 @@ public class ValidationController{
     public ValidationEntity sendData2(@Valid @RequestBody ValidationEntity stu){
         return ser.postdata2(stu);//to ser calling the service layer
     }
-    // @GetMapping("/get2")
-    // public List<ValidationEntity> getData(){
-    //     return ser.getdata();
-    // }
+    @GetMapping("/get2")
+    public List<ValidationEntity> getData(){
+        return ser.getdata();
+    }
     // @DeleteMapping("/del2/{id}")
     // public String delData(@PathVariable Long id){
     //     return ser.deldata(id);
