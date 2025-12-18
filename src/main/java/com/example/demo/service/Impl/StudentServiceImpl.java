@@ -22,6 +22,8 @@ public class StudentServiceImpl implements StudentService{
         return student.findAll();
     }
     @Override
-    public StudentEntity deldata()
+    public StudentEntity deldata(Integer id){
+        return student.deleteById(id);
+    }
 
 }
