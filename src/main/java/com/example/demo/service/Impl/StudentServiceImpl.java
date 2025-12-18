@@ -22,7 +22,7 @@ public class StudentServiceImpl implements StudentService{
         return student.findAll();
     }
     @Override
-    public StudentEntity deldata(Integer id){
+    public String deldata(Integer id){
         return student.deleteById(id);
     }
 
