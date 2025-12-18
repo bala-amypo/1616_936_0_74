@@ -28,4 +28,8 @@ public class StudentController{
     public StudentEntity GetByData(@PathVariable Integer id){
         return ser.getbydata(id);
     }
+    @PutMapping("/put/{id}")
+    public StudentEntity putData(@PathVariable Integer id){
+        return ser.putdata(id);
+    }
 }
