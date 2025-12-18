@@ -66,7 +66,7 @@ public class ValidationEntity{
         this.password=password;
         this.createdAt=createdAt;
     }
-    public StudentEntity(){
+    public ValidationEntity(){
 
     }
 
