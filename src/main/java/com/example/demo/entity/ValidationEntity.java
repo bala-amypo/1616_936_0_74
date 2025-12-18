@@ -24,5 +24,6 @@ public class ValidationEntity{
     private String password;
     @Min(18)
     @Positive
+    @NotNull(message="Age is mandatory")
     private Integer age; 
 }
