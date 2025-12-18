@@ -28,6 +28,6 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public StudentEntity putgetdata(Integer id){
-        return student.findById(id);    
+        return student.findById(id).orElse(null);    
     }
 }
