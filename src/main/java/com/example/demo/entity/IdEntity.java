@@ -4,6 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
+
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,10 +23,11 @@ public class IdEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private int cardno;
-    private int student_id;
+    // private int student_id;
     @OneToOne
+    @JoinColumn(name="student_id")
     private StudentIdEntity student;
-    
+
 
 }
    
