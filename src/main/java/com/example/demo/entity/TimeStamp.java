@@ -10,6 +10,8 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -31,5 +33,7 @@ public void onCreate(){
     this.createdAt=now;
     this.updatedAt=now;
 }
+@PreUpdate
+
 }
    
