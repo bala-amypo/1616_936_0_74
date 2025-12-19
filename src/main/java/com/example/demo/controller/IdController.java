@@ -15,7 +15,7 @@ import jakarta.validation.Valid;
 public class IdController{
     @Autowired IdService ser;  
     @PostMapping("/postttt")
-    public StudentIdEntity sendData4(@Valid @RequestBody StudentIdEntity stu4){
+    public IdEntity sendData4(@Valid @RequestBody StudentIdEntity stu4){
         return ser.postdata4(stu4);//to ser calling the service layer
     }
     // @GetMapping("/get2")
