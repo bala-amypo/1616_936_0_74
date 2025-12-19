@@ -8,7 +8,7 @@ import com.example.demo.entity.TimeStamp;
 
 import java.util.List;
 @Service
-public class ValidationServiceImpl implements ValidationService{
+public class Impl implements ValidationService{
    @Autowired ValidationRepository valido;//  acces the method in diff files
    //save();
    //findall();
