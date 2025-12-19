@@ -5,7 +5,7 @@ import com.example.demo.service.ValidationService;
 import com.example.demo.repository.ValidationRepository;
 import com.example.demo.entity.ValidationEntity;
 import java.util.List;
-import cpm.
+import com.example.demo.exception.ValidationException;
 @Service
 public class ValidationServiceImpl implements ValidationService{
    @Autowired ValidationRepository valid;//  acces the method in diff files
