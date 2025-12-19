@@ -3,7 +3,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.TimeStampService;
 import com.example.demo.repository.TimeStampRepository;
-// import com.example.demo.entity.ValidationEntity;
+import com.example.demo.entity.TimeStamp;
 // import com.example.demo.exception.ValidationException;
 
 import java.util.List;
