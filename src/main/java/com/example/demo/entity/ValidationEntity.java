@@ -13,6 +13,8 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 public class ValidationEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
