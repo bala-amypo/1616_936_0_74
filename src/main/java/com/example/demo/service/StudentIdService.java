@@ -1,5 +1,5 @@
 package com.example.demo.service;
-import com.example.demo.entity.StudentService;
+import com.example.demo.entity.StudentServ;
 // import java.util.List;
 
 public interface TimeStampService{
