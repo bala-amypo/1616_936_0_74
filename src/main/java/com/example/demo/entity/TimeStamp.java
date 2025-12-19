@@ -15,14 +15,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 @Setter
-public class StudentEntity{
+public class TimeStamp{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     private String username;
     private String email;
     private String password;
-    private Date createdAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
 }
    
