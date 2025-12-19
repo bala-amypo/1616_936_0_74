@@ -19,9 +19,9 @@ public class IdEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    private String username;
+    private int cardno;
     private String email;
-    private String addr;
+    private String student_id;
 
 }
    
