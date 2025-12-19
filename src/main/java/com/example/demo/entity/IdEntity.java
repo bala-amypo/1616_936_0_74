@@ -21,7 +21,7 @@ public class IdEntity{
     private Integer id;
     private int cardno;
     private String email;
-    private String student_id;
+    private int student_id;
 
 }
    
