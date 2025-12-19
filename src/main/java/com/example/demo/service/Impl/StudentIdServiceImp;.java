@@ -5,17 +5,17 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.service.StudentIdService;
 import com.example.demo.repository.StudentIdRepository;
-import com.example.demo.entity.StudentId;
+import com.example.demo.entity.StudentIdEntity;
 
 @Service
-public class TimeStampServiceImpl implements TimeStampService {
+public class StudentIdServiceImpl implements StudentIdService {
 
     @Autowired
-    private TimeStampRepository valido;
+    private StudentIdRepository validoo;
 
     @Override
-    public TimeStamp postdata3(TimeStamp stu2) {
-        return valido.save(stu2);
+    public StudentIdEntity postdata4(StudentIdEntity stu4) {
+        return validoo.save(stu4);
     }
 
     // Keep commented methods fully commented
