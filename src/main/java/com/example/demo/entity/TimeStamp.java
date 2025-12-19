@@ -35,7 +35,7 @@ public void onCreate(){
 }
 @PreUpdate
 public void onUpdate(){
-    
+    this
 }
 }
    
