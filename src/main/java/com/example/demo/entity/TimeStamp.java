@@ -22,7 +22,9 @@ public class TimeStamp{
     private String username;
     private String email;
     private String password;
+    @PrePersist
     private LocalDateTime createdAt;
+    @PrePersist
     private LocalDateTime updatedAt;
 
 }
