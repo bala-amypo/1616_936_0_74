@@ -9,14 +9,13 @@ import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
-import jakarta
+import jakarta.persistence.PrePersist;
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-@PrePersist
 public class TimeStamp{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -26,5 +25,11 @@ public class TimeStamp{
     private String password;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+@PrePersist
+public void onCreate(){
+    LocalDateTime now=new LocalDateTime();
+    this.createdAt=now;
+    this.updatedAt=now;
+}
 }
    
