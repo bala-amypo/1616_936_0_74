@@ -9,12 +9,14 @@ import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
+import 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
+@PrePersist
 public class TimeStamp{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -22,10 +24,7 @@ public class TimeStamp{
     private String username;
     private String email;
     private String password;
-    @PrePersist
     private LocalDateTime createdAt;
-    @PrePersist
     private LocalDateTime updatedAt;
-
 }
    
