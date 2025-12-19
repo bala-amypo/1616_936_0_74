@@ -13,7 +13,6 @@ public class StudentEntity{
     private String email;
     private String password;
     private Date createdAt;
-    public void setId(Integer id){
-        this.id=id;
-    }
+
+}
    

@@ -8,6 +8,7 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Positive;
+impo
 @Entity
 public class ValidationEntity{
     @Id
@@ -24,6 +25,7 @@ public class ValidationEntity{
     @Min(18)
     @Positive
     @NotNull(message="Age is mandatory")
-    private int age; 
+    private int age;
+    @Data 
     
 }
