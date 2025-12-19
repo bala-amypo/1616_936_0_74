@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.service.TimeStampService;
-import com.example.demo.entity.TimeStamp;
+import com.example.demo.service.StudentIdService;
+import com.example.demo.entity.StudentIdEntity;
 import jakarta.validation.Valid;
 @RestController
-public class TimeStampController{
-    @Autowired TimeStampService ser;  
-    @PostMapping("/postt")
-    public TimeStamp sendData3(@Valid @RequestBody TimeStamp stu2){
-        return ser.postdata3(stu2);//to ser calling the service layer
+public class StudentIdController{
+    @Autowired StudentIdService ser;  
+    @PostMapping("/postttt")
+    public StudentIdEntity sendData4(@Valid @RequestBody StudentIdEntity stu4){
+        return ser.postdata4(stu4);//to ser calling the service layer
     }
     // @GetMapping("/get2")
     // public List<ValidationEntity> getData(){
