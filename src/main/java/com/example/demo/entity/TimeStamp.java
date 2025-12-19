@@ -34,6 +34,8 @@ public void onCreate(){
     this.updatedAt=now;
 }
 @PreUpdate
-
+public void onUpdate(){
+    
+}
 }
    
