@@ -9,7 +9,7 @@ import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
-import 
+import jakarta
 @Entity
 @Data
 @AllArgsConstructor
