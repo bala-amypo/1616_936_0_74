@@ -2,22 +2,22 @@ package com.example.demo.service.Impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.TimeStampService;
-import com.example.demo.repository.ValidationRepository;
+import com.example.demo.repository.TimeStampRepository;
 // import com.example.demo.entity.ValidationEntity;
 // import com.example.demo.exception.ValidationException;
 
 import java.util.List;
 @Service
 public class ValidationServiceImpl implements ValidationService{
-   @Autowired ValidationRepository valid;//  acces the method in diff files
+   @Autowired ValidationRepository valido;//  acces the method in diff files
    //save();
    //findall();
    //findById();
    //deleteById();
    //existsById();
    @Override
-    public TimeStamp postdata2(TimeStamp stu){
-        return valid.save(stu);
+    public TimeStamp postdata3(TimeStamp stu2){
+        return valido.save(stu2);
     }
     // @Override
     // public List<ValidationEntity> getdata(){
